@@ -333,12 +333,7 @@ class _LoginPageState extends State<LoginPage> {
                                   ),
                                   InkWell(
                                     onTap: () {
-                                      Navigator.push(
-                                        context,
-                                        MaterialPageRoute(
-                                          builder: (context) => SliderPage(),
-                                        ),
-                                      );
+                                      
                                     },
                                     child: CircleAvatar(
                                       child: Icon(Icons.brightness_medium),

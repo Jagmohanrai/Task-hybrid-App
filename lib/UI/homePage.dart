@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:task/Services/auth_services.dart';
 import 'package:task/UI/login_page.dart';
+import 'package:task/UI/slider_page.dart';
 import 'package:task/UI/submit_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -68,6 +69,18 @@ class _HomePageState extends State<HomePage> {
                       );
                     },
                     child: Text("Request Page"),
+                  ),
+                  // ignore: deprecated_member_use
+                  RaisedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SliderPage(),
+                        ),
+                      );
+                    },
+                    child: Text("Slider Page"),
                   )
                 ],
               ),
